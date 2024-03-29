@@ -9,7 +9,7 @@ export default function FooterComponent() {
 
 				<div className='mb-16 md:mb-10'>
 					<a href='https://www.seplag.ce.gov.br/' className='flex items-center'>
-						<LogoIcon width={320} height={54}/>
+						<LogoIcon width={250} height={45}/>
 					</a>
 
 				</div>
@@ -21,30 +21,36 @@ export default function FooterComponent() {
 							<li className='mb-4'>
 								<a href='https://www.seplag.ce.gov.br/acesso-a-sistemas/' className='hover:underline'>Acesso a Sistemas</a>
 							</li>
-							<li>
+							<li className='mb-4'>
 								<a href='http://www.casacivil.ce.gov.br/diario-oficial/' className='hover:underline'>Diário Oficial</a>
 							</li>
-						</ul>
-					</div>
-					<div>
-						<h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white'>Follow us</h2>
-						<ul className='text-gray-500 dark:text-gray-400 font-medium'>
-							<li className='mb-4'>
-								<a href='https://github.com/themesberg/flowbite' className='hover:underline '>Github</a>
-							</li>
 							<li>
-
+								<a href='http://s2gpr.sefaz.ce.gov.br/licita-web/paginas/licita/PublicacaoList.seam/' className='hover:underline'>Carta de Serviços do Cidadão</a>
 							</li>
 						</ul>
 					</div>
 					<div>
-						<h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white'>Legal</h2>
+						<h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white'>Acesso Rápido</h2>
 						<ul className='text-gray-500 dark:text-gray-400 font-medium'>
 							<li className='mb-4'>
-								<a href='#' className='hover:underline'>Privacy Policy</a>
+								<a href='https://www.seplag.ce.gov.br/acesso-a-sistemas/' className='hover:underline'>Acesso a Sistemas</a>
 							</li>
 							<li>
-								<a href='#' className='hover:underline'>Terms &amp; Conditions</a>
+								<a href='https://www.al.ce.gov.br/' className='hover:underline'>Legislação Estadual</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white'>Acesso Rápido SEPLAG</h2>
+						<ul className='text-gray-500 dark:text-gray-400 font-medium'>
+							<li className='mb-4'>
+								<a href='https://www.seplag.ce.gov.br/telefones/' className='hover:underline'>Telefones</a>
+							</li>
+							<li className='mb-4'>
+								<a href='http://web3.seplag.ce.gov.br/guardiao3cliente/Login.aspx' className='hover:underline'>Servidor Online</a>
+							</li>
+							<li className=''>
+								<a href='http://172.27.37.196/intranet/' className='hover:underline'>Intranet</a>
 							</li>
 						</ul>
 					</div>
