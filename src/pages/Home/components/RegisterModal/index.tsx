@@ -119,7 +119,7 @@ export default function RegisterModal(props: IRegisterModal) {
 				</div>
 
 				<div className='mt-8 flex justify-end'>
-					<div className='ui button' onClick={createPerson}>
+					<div className='ui button positive' onClick={createPerson}>
 						<i className='icon user plus'></i> Criar
 					</div>
 				</div>

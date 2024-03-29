@@ -12,6 +12,7 @@ interface IPersonRenderingTable {
 export default function PersonRenderingTable(props: IPersonRenderingTable) {
 	const [person, setPerson] = useState<IPerson[]>([]);
 	const {showLoading, hideLoading} = useLoading();
+	const [searchTerm, setSearchTerm] = useState<string>('');
 
 	async function getAllPerson() {
 		try {
@@ -30,6 +31,10 @@ export default function PersonRenderingTable(props: IPersonRenderingTable) {
 		}
 	}
 
+	const filteredUsers = person.filter(p =>
+		p.name.toLowerCase().includes(searchTerm.toLowerCase())
+	);
+
 	useEffect(() => {
 		showLoading();
 		getAllPerson();
@@ -41,6 +46,14 @@ export default function PersonRenderingTable(props: IPersonRenderingTable) {
 
 	return (
 		<div className='mt-6'>
+
+			<div className='mt-2 flex  large justify-end gap-2'>
+				<div className='ui left icon input md'>
+					<input type='text' placeholder='Buscar por nome...' onChange={(e) => setSearchTerm(e.target.value)}/>
+					<i className='users icon'></i>
+				</div>
+			</div>
+
 			<table className='ui celled table'>
 				<thead>
 					<tr>
@@ -53,8 +66,9 @@ export default function PersonRenderingTable(props: IPersonRenderingTable) {
 					</tr>
 				</thead>
 				<tbody>
+
 					{
-						person.map((person, index) => (
+						filteredUsers.map((person, index) => (
 							<tr key={index} className={statusInactive(person.status.id) ? 'error' : ''}>
 								<td>{index + 1}</td>
 								<td>{person.name}</td>
@@ -73,7 +87,19 @@ export default function PersonRenderingTable(props: IPersonRenderingTable) {
 						))
 					}
 				</tbody>
+
 			</table>
+			{
+				(filteredUsers.length === 0 || person.length === 0) && (
+					<div className='ui message icon message'>
+						<i className='inbox icon'></i>
+						<div className='header'>
+							Não há resultados
+							<p className='text-sm'>Crie um novo registro ou utilize outros filtros de busca</p>
+						</div>
+					</div>
+				)
+			}
 		</div>
 	);
 }

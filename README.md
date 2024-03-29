@@ -2,7 +2,7 @@
 # Sistema de Gestão de Acessos - SEPLAGCE
 Esta é uma aplicação web de gerenciamento de pessoas que permite aos usuários criar, listar, editar e excluir pessoas.
 
-![image](https://github.com/ayrtonfilho/front-react.seplag.ce/assets/71043862/77837269-01a6-4821-a028-d340cdba479d)
+![image](https://github.com/ayrtonfilho/front-react.seplag.ce/assets/71043862/36cc1295-fd24-435e-a615-6511f67f2719)
 
 ### Requisitos Funcionais
 1. CRUD de Pessoas: Os usuários podem criar, ler, atualizar e excluir pessoas. Cada pessoa tem os seguintes atributos: id, nome, sobrenome, CPF, data de cadastro e um status (ativo ou inativo).
