@@ -31,7 +31,7 @@ export default function AccessManagementComponent() {
 
 			<div className='mt-5'>
 				<button
-					className='ui basic button'
+					className='ui positive button'
 					onClick={toggleRegisterModal}
 					>
 						<i className='icon user plus'></i>
