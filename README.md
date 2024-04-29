@@ -1,5 +1,5 @@
 
-# Sistema de Gestão de Acessos - SEPLAGCE
+# Sistema de Gestão de Acessos
 Esta é uma aplicação web de gerenciamento de pessoas que permite aos usuários criar, listar, editar e excluir pessoas.
 
 ### Requisitos Funcionais
