@@ -8,7 +8,7 @@ Esta é uma aplicação web de gerenciamento de pessoas que permite aos usuário
 ## Documentação
 
 [Modelagem de Tabelas](https://drawsql.app/teams/af-software-engineer/diagrams/seplag-ce-desafio-tecnico)
-
+		
 
 ## Tecnologias Utilizadas
 
